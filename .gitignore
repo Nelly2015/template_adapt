@@ -1,5 +1,5 @@
-git /node_modules/
 /node_modules/
+!app/libs/owl.carousel/dist
 /.git/
 /app/css/
 /**/*.psd
