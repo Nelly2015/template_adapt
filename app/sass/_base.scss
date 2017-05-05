@@ -31,18 +31,47 @@ html, body{
 }
 
 body{
-	font-size: 16px;
+	font-size: 14px;
+	color: $main-font-color;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.75;
+	line-height: 1.286em;
 	font-family: $default-font;
 	overflow-x: hidden;
 	opacity: 1;
-	background: $accent;
+	background: #fff; 
 }
 
-.img-responsive{
-	display: block;
-	max-width: 100%;
-	height: auto;
+a, a:focus, a:active{
+	color: $link;
+	text-decoration: none;
+	@include ease;
 }
+
+a:hover{
+	color: $accent;
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style:none;
+}
+.headers{
+	font-family: $default-font,$helvetica;	
+	color: #5c5f62;	
+}
+
+.view-detail{
+	color: #31bbeb;
+	font-family: $default-font,$helvetica;
+	font-style: italic;
+	font-size: 0.929em; //13
+}
+
+
+
+
+

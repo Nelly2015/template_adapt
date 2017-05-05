@@ -1,5 +1,8 @@
-//@import "_mixins/font-face";
+@import "_mixins/font-face";
 
-/* +font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-+font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-f("opensans-bold", "../fonts/open_sans_bold/opensans-bold");
+@include font-f("pt_sans_caption", "../fonts/pt_sans_caption/ptc");
+
+	/* +font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+	+font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
  */
