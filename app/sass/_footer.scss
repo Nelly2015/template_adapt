@@ -1,0 +1,41 @@
+footer{
+	padding: 59px 0 66px;	
+	background: url('../img/bg_blue.jpg') repeat 0 0;
+	position: relative;
+	.copy{
+		max-width: 280px;
+		margin-bottom: 20px;
+	}
+
+	.footer-menu{
+		li{
+			float: left;
+			padding: 0 15px;
+			border-right:1px solid #a0a1a2;
+		
+			&:first-child{padding-left:0;}
+			&:last-child{padding-right:0;border-right:none;}
+		}
+	}
+
+	.scroll-up{
+		position: fixed;
+		bottom:50px;
+		left:95%;
+		width: 50px;
+		height: 50px;
+		background: $accent;
+		cursor: pointer;
+		border:1px solid $accent;
+
+		.fa-angle-up{
+			color: #fff;			
+			padding: 17px 18px;
+		}
+
+		&:hover{
+			border:1px solid #b8e1ef;
+		}
+	}
+
+}

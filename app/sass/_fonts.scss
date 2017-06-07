@@ -2,6 +2,8 @@
 
 @include font-f("opensans-bold", "../fonts/open_sans_bold/opensans-bold");
 @include font-f("pt_sans_caption", "../fonts/pt_sans_caption/ptc");
+@include font-f("pt_sans_caption_bold", "../fonts/PTSansCaptionBold/PTSansCaptionBold");
+@include font-f("flaticon", "../fonts/Flaticon/flaticon");
 
 	/* +font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 	+font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);

@@ -1,34 +1,335 @@
-@import "vars";
 
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
-	/**/
+	.main-head{			
+			
+	
+		.logo{
+			width: 100%;			
+			text-align: center;			
+			padding: 30px 0 0 0;			
+		}
+
+		.top-menu{			
+			text-align: center;			
+			line-height: 50px;
+			float: none;
+			
+		}
+		
+	}
+
+	#slides{
+			
+		.owl-carousel{
+			.slides-head{									
+				line-height: 70px;
+				margin:5% 0 20px;
+				font-size: 4.2em;
+			}
+		}
+	}
 }
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-	/**/
+	.main-head{			
+		
+		
+		.top-menu{
+			.search{
+				float: right;
+				margin: 0;	
+			}
+		}
+	}
+
+	#slides{
+			
+		.owl-carousel{
+			.slides-head{									
+				line-height: 50px;
+				margin:5% 0 15px;
+				font-size: 3.2em;
+			}
+
+			.slides-head-2{				
+				margin-bottom: 27px;								
+				font-size: 16px;					
+			}
+
+			.slides-btn{
+				width: 210px;
+				height: 40px;									
+				font-size: 16px;				
+				line-height: 32px;	
+			}
+		}
+	}
+
+	.responsive{		
+		padding: 36px 0;		
+		p{
+			font-size: 1.429em;	
+			margin: 0 15px;
+		}
+	}
+
+	
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
-	/**/
+	.main-head{			
+		
+		
+		.top-menu:before,
+		.top-menu:after,
+		.nav-top-menu:before,
+		.nav-top-menu:after{
+		    content: " ";
+		    display: table;
+		}
+		.top-menu:after,.nav-top-menu:after {
+		    clear: both;
+		}
+		
+		.nav-top-menu{			
+			width: 100%;
+			margin-bottom: 20px;
+
+			.serach-for-tablets{				
+				display: inline-block;
+				
+			}
+		}
+		.top-menu{
+			display: none;				
+			column-count: 2;
+			li{
+				width: 100%;
+				display: block;
+				text-align: left;
+				border-top: 1px dotted #333;
+				color: #fff;
+				margin: 0;
+			}
+			
+
+			.search{display: none;}
+		}
+		.logo{
+			width: 100%;			
+			text-align: left;			
+			padding: 30px 0 0 0;			
+		}
+		//меню для наладонников
+		.nav-bar{
+			//width: 100%;
+			margin-top: -20px;
+			display:block;
+			float: right;
+
+		}
+
+	}
+
+	#slides{
+			
+		.owl-carousel{
+
+			
+			.slides-head{									
+				line-height: 35px;
+				margin:4% 0 15px;
+				font-size: 2.2em;
+			}
+
+			.slides-head-2{				
+				margin-bottom: 24px;								
+				font-size: 14px;					
+			}
+
+			.slides-btn{				
+				width: 200px;
+				height: 38px;									
+				font-size: 14px;				
+				line-height: 31px;	
+			}
+
+
+			//контроль стрелки		
+			.owl-nav{				
+				top:35%;
+			}
+		}
+	}
+
+
+	.core-features{
+		.core-list{
+			//width: 90%;
+			column-gap: 0;
+			column-count: 1;
+
+			li:nth-child(4){border-bottom:1px dashed #b2b2b2;}
+		}
+		
+		
+	}
+
+
+
 }
 
+@media only screen and (max-width : 620px){
 
+	h2{
+		font-size: 2.5em;//40 <- 48
+		line-height: 1em;
+	}
+	#slides{
+			
+		.owl-carousel{
+
+			
+			.slides-head{									
+				line-height: 32px;
+				margin:7% 0 10px;				
+			}
+
+			.slides-head-2{	
+				padding: 0 15%;
+			}
+
+			
+		}
+	}
+
+	.about{
+			.social{
+				
+				li{
+					
+					.social-link{
+						
+						padding-top:5px;
+					}
+				}
+			}
+		}
+
+	footer{
+		.footer-menu{
+			li{
+				float:none;
+				border-left:1px solid $accent;
+				border-right:none;
+				padding: 0 0 0 15px;
+				line-height: 25px;
+
+				&:first-child{padding-left:15px;}
+			}
+
+		}
+	}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-	/**/
+	
+	
+	#slides{
+			
+		.owl-carousel{
+
+			
+			.slides-head{									
+				line-height: 32px;
+				margin:3% 0 10px;	
+				font-size: 2em;			
+			}
+
+			//контроль стрелки		
+			.owl-nav{				
+				top:30%;
+			}
+		}
+	}
+
+	.we-design{
+		h3{
+			font-size: 3.214em;//45 <- 60
+			padding-bottom:20px;
+		}	
+	}
+	
+	
+	
 }
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){
-	/**/
+@media only screen and (max-width : 380px){
+	.main-head{			
+		background: #fff;
+
+		.nav-top-menu{			
+			// width: 100%;
+			.serach-for-tablets{									
+				
+				margin-right: 10px;	
+				margin-top: 24px;			
+			}
+		}
+		.top-menu{
+			width: 100%;									
+			column-count: 1;	
+			
+			li:nth-child(4){border-bottom:none;}		
+		}
+		.logo{
+			width: 85%;			
+			img{
+				width: 100%;
+			}		
+		}
+		.nav-bar{			
+			float: left;
+			margin-top: 20px;
+			display:block;			
+
+		}
+	}
+
+	#slides{
+			
+		.owl-carousel{
+			.slides-head{									
+				line-height: 32px;
+				margin:6% 0 10px;	
+				font-size: 1.7em;			
+			}
+			
+
+			//контроль стрелки		
+			.owl-nav{				
+				top:20%;
+			}
+		}
+	}
+
+	.portfolio{
+		.folio-link{
+			min-width:100%;
+		}
+		.figure{	
+			max-width:100%;
+		}
+	}
 }
 
 
